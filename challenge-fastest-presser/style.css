@@ -1,3 +1,32 @@
 body {
-  background-color: white;
+	background-color: white;
+}
+h1,
+h2,
+h4,
+p {
+	text-align: center;
+}
+.green {
+	color: green;
+	margin-top: 50px;
+	font-weight: 900;
+}
+.red {
+	color: red;
+	font-weight: 800;
+	font-size: 3em;
+}
+#timeRemaining {
+	margin: 50px 0;
+}
+h2 {
+	color: blue;
+}
+.score {
+	border: solid black 1px;
+	border-radius: 50px;
+	font-size: 1.8rem;
+	color: rgb(5, 56, 5);
+	font-weight: 500;
 }
