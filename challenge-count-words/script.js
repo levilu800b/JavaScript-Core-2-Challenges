@@ -2,7 +2,40 @@ function calculateWords(chapterOfABook) {
   const wordCount = {};
 
   // Write your code in here
+  const words = chapterOfABook.split(" ");
+  for (let word of words) {
+    if (word === "") {
+      continue;
+    }
+    if (wordCount[word]) {
+      wordCount[word] += 1;
+    } else {
+      wordCount[word] = 1;
+    }
+  }
 
+  return wordCount;
+}
+
+calculateWords(getDraculaChapterOne());
+
+// Another solution
+
+function calculateWords(chapterOfABook) {
+	const wordCount = {};
+
+	// Write your code in here
+	let split = chapterOfABook.split(' ');
+	for (let i = 0; i < split.length; i++) {
+    if (split[i] === '') {
+      continue;
+    }
+    if (wordCount[split[i]]) {
+      wordCount[split[i]] += 1;
+    } else {
+      wordCount[split[i]] = 1;
+    }
+  }
   return wordCount;
 }
 
